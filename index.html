@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advanced HTML</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.css" />
+    <script defer src="js/vendor/bootstrap.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="hero">
+        <div class="container">
+          <div class="row">
+            <img
+              src="img/profile.jpg"
+              style="width: 200px; height: 250px; object-fit: cover"
+              width="200"
+              alt=""
+            />
+            <h1>Jonathan Smith</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#personal_info">Personal Info</a></li>
+          <li><a href="#work_experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#technical_skills">Technical Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Personal Info Section-->
+
+    <section id="personal_info">
+      <div class="container">
+        <div class="row">
+          <div id="personal_card" itemscope itemtype="http://schema.org/Person">
+            <p>Name: <span itemprop="name">Jonathan Smith</span></p>
+            <p>Job Title: <span itemprop="jobTitle">Web Developer</span></p>
+            <div
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              <p>
+                Address:
+                <span itemprop="streetAddress">23 High Hope Blvd</span>
+                <span itemprop="addressLocality">Some City</span>,
+                <span itemprop="addressRegion">XX</span>
+                <span itemprop="postalCode">98052</span>
+              </p>
+            </div>
+            <p>Phone: <span itemprop="telephone">(425) 123-4567</span></p>
+            <p>
+              Email:
+              <a href="mailto:jonsmith@jbs.com" itemprop="email"
+                >jonsmith@jbs.com</a
+              >
+            </p>
+          </div>
+          <div id="blurb">
+            <p>
+              Scelerisque in dictum non consectetur. Euismod lacinia at quis
+              risus sed vulputate odio ut. Parturient montes nascetur ridiculus
+              mus mauris. Fusce ut placerat orci nulla. Eu non diam phasellus
+              vestibulum lorem. Vulputate mi sit amet mauris commodo quis
+              imperdiet massa. Odio eu feugiat pretium nibh ipsum consequat nisl
+              vel pretium. Integer vitae justo eget magna fermentum iaculis. In
+              egestas erat imperdiet sed euismod nisi porta lorem mollis. Ornare
+              arcu dui vivamus arcu felis bibendum ut tristique. Sem nulla
+              pharetra diam sit amet nisl suscipit adipiscing bibendum. Magna
+              fermentum iaculis eu non diam phasellus vestibulum lorem sed.
+              Morbi tincidunt ornare massa eget egestas purus viverra accumsan
+              in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+
+    <section id="work_experience">
+      <div class="container">
+        <div class="row">
+          <h2>Work Experience</h2>
+          <div
+            class="experience"
+            itemscope
+            itemtype="http://schema.org/OrganizationRole"
+          >
+            <h3><span itemprop="name">ABC Company</span></h3>
+            <p class="dates">
+              <span itemprop="startDate">2012</span>
+              <span itemprop="endDate">2018</span>
+            </p>
+            <p class="role">
+              <span itemprop="roleName">Web Developer</span>
+            </p>
+            <p class="description">
+              Dignissim sodales ut eu sem integer vitae justo eget. Donec massa
+              sapien faucibus et. Ut eu sem integer vitae justo eget magna
+              fermentum iaculis. Risus quis varius quam quisque. Egestas sed
+              tempus urna et pharetra pharetra massa massa ultricies. Venenatis
+              lectus magna fringilla urna porttitor. Diam in arcu cursus
+              euismod. Odio morbi quis commodo odio. Elementum eu facilisis sed
+              odio morbi. Massa id neque aliquam vestibulum morbi blandit cursus
+              risus. Laoreet sit amet cursus sit amet dictum.
+            </p>
+            <ul class="tasks">
+              <li>Massa tempor nec.</li>
+              <li>Porttitor leo a diam.</li>
+              <li>Massa tempor nec feugiat.</li>
+            </ul>
+          </div>
+          <div
+            class="experience"
+            itemscope
+            itemtype="http://schema.org/OrganizationRole"
+          >
+            <h3><span itemprop="name">ABC Company</span></h3>
+            <p class="dates">
+              <span itemprop="startDate">2012</span>
+              <span itemprop="endDate">2018</span>
+            </p>
+            <p class="role">
+              <span itemprop="roleName">Web Developer</span>
+            </p>
+            <p class="description">
+              Dignissim sodales ut eu sem integer vitae justo eget. Donec massa
+              sapien faucibus et. Ut eu sem integer vitae justo eget magna
+              fermentum iaculis. Risus quis varius quam quisque. Egestas sed
+              tempus urna et pharetra pharetra massa massa ultricies. Venenatis
+              lectus magna fringilla urna porttitor. Diam in arcu cursus
+              euismod. Odio morbi quis commodo odio. Elementum eu facilisis sed
+              odio morbi. Massa id neque aliquam vestibulum morbi blandit cursus
+              risus. Laoreet sit amet cursus sit amet dictum.
+            </p>
+            <ul class="tasks">
+              <li>Massa tempor nec.</li>
+              <li>Porttitor leo a diam.</li>
+              <li>Massa tempor nec feugiat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <div class="row">
+          <h2>Education</h2>
+          <div class="education" itemscope itemtype="http://schema.org/Person">
+            <h3>
+              <span itemprop="name">Bachelor of Information Technology</span>
+            </h3>
+            <p class="dates">
+              <span itemprop="startDate">2000</span>
+              <span itemprop="endDate">2003</span>
+            </p>
+            <div
+              itemprop="alumniOf"
+              itemscope
+              itemtype="http://schema.org/OrganizationRole"
+            >
+              <div
+                itemprop="alumniOf"
+                itemscope
+                itemtype="http://schema.org/CollegeOrUniversity"
+              >
+                <p class="institute">
+                  <span itemprop="name">Open Polytechnic</span>
+                </p>
+              </div>
+              <p class="description">
+                Dignissim sodales ut eu sem integer vitae justo eget. Donec
+                massa sapien faucibus et. Ut eu sem integer vitae justo eget
+                magna fermentum iaculis. Risus quis varius quam quisque. Egestas
+                sed tempus urna et pharetra pharetra massa massa ultricies.
+                Venenatis lectus magna fringilla urna porttitor. Diam in arcu
+                cursus euismod. Odio morbi quis commodo odio. Elementum eu
+                facilisis sed odio morbi. Massa id neque aliquam vestibulum
+                morbi blandit cursus risus. Laoreet sit amet cursus sit amet
+                dictum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Techinical Skill Section-->
+
+    <section id="technical_skills">
+      <div class="container">
+        <div class="row">
+          <h2>Technical Skills</h2>
+          <svg viewbox="0 0 36 36">
+            <path
+              d="M18 2.0845 a 15.9155 15.9155 0 0 0 0 31.831 a 15.9155 15.9155 0 0 0 0 -31.831"
+              fill="none"
+              stroke="#444"
+              stroke-width="1"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section-->
+
+    <section id="portfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+          <div class="col">
+            <picture id="portfolio1">
+              <source
+                media="(max-width: 480px)"
+                srcset="img/portfolio1_small.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="img/portfolio1_medium.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/portfolio1_large.jpg"
+              />
+              <img src="img/portfolio1.jpg" alt="A website" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <h2>Get in touch</h2>
+          <p>
+            <label for="name">
+              <span>Name: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="name" name="name" tabindex="1" />
+          </p>
+          <p>
+            <label for="mail">
+              <span>E-mail: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="email" id="mail" name="email" tabindex="2" />
+          </p>
+          <p>
+            <label for="message">
+              <span>Message: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <textarea id="message" name="message" tabindex="3"></textarea>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </footer>
+  </body>
+</html>
