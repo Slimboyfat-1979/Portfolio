@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACI,eAAK,CACD,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,2CACI,CACA,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,KAAK",
-"sources": ["../scss/_portfolio.scss"],
+"mappings": "AAAA,IAAK,CACD,WAAW,CAAE,gBAAgB,CAC7B,KAAK,CCFK,OAAO,CDGjB,WAAW,CAAE,GAAG,CAEpB,iBAAuB,CACnB,WAAW,CAAE,sCAAsC,CACnD,KAAK,CCNO,OAAO,CCAnB,eAAK,CACD,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,2CACI,CACA,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,KAAK",
+"sources": ["../scss/_typography.scss","../scss/_variables.scss","../scss/_portfolio.scss"],
 "names": [],
 "file": "styles.css"
 }
