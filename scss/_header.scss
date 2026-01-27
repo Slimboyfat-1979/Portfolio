@@ -28,3 +28,67 @@
     }
 }
 
+#hero h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#hero p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+#menu {
+    border-top: 1px solid $header_colour;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    li{
+       position: relative;
+       display: inline-block;
+       a{
+        padding: 25px 15px;
+        display: block;
+        position: relative;
+        border: none;
+        font-weight: 700;
+        font-family: 'Oswald', Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        text-transform: uppercase;
+        &::before {
+            content: '/';
+            margin-right: 1px;
+            color: $header_colour;
+          }
+       }
+       &:first-child a::before{
+        display: none;
+       }
+    }
+}
+
+//Add these mixins from bootstrap
+
+// @include media-breakpoint-up(sm) {
+//     #hero h1 {
+//         font-size: 3.5rem;
+//         line-height: 4.5rem;
+//     }
+// }
+
+// @include media-breakpoint-up(md) {
+//     #hero h1 {
+//         font-size: 4rem;
+//         line-height: 5rem;
+//     }
+// }
+
+
+// @include media-breakpoint-up(lg){
+//     #hero h1 {
+//         font-size: 4.5rem;
+//         line-height: 5.5rem;
+//     }
+// }
+

@@ -1,0 +1,7 @@
+a {
+    color: $header_colour;
+    @include transition(color 0.3 ease);
+    &:hover {
+        color: $gold;
+    }
+}

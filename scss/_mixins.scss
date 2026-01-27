@@ -12,3 +12,7 @@
 @mixin border-radius($radius) {
     @include vendor-prefix('border-radius', $radius)
 }
+
+@mixin transition($transition) {
+    @include vendor-prefix('transition', $transition)
+}
