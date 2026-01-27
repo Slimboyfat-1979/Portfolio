@@ -1,0 +1,14 @@
+@mixin vendor-prefix($prefix, $value) {
+    -webkit-#{$prefix}: $value;
+    -moz-#{$prefix}: $value;
+    -o-#{$prefix}: $value;
+    #{$prefix}: $value;
+}
+
+@mixin background-size($size) {
+    @include vendor-prefix('background-size', $size)
+}
+
+@mixin border-radius($radius) {
+    @include vendor-prefix('border-radius', $radius)
+}
