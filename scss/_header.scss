@@ -56,6 +56,12 @@
         font-family: 'Oswald', Arial, Helvetica, sans-serif;
         font-size: 1em;
         text-transform: uppercase;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $gold;
+        }
+        
         &::before {
             content: '/';
             margin-right: 1px;
