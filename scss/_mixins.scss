@@ -16,3 +16,7 @@
 @mixin transition($transition) {
     @include vendor-prefix('transition', $transition)
 }
+
+@mixin filter($filter) {
+    @include vendor-prefix('filter', $filter)
+}
