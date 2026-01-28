@@ -34,16 +34,36 @@
       </div>
       <nav id="menu" class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#personal_info">Personal Info</a></li>
-              <li class="nav-item"><a class="nav-link" href="#work_experience">Work Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-              <li class="nav-item"><a class="nav-link" href="#technical_skills">Technical Skills</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#personal_info">Personal Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work_experience">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#technical_skills"
+                  >Technical Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,7 +75,12 @@
     <section id="personal_info">
       <div class="container">
         <div class="row">
-          <div id="personal_card" itemscope itemtype="http://schema.org/Person" class="col-md-6">
+          <div
+            id="personal_card"
+            itemscope
+            itemtype="http://schema.org/Person"
+            class="col-md-6"
+          >
             <h2>Personal Information</h2>
             <p>Name: <span itemprop="name">Jonathan Smith</span></p>
             <p>Job Title: <span itemprop="jobTitle">Web Developer</span></p>
@@ -219,14 +244,122 @@
       <div class="container">
         <div class="row">
           <h2>Technical Skills</h2>
-          <svg viewbox="0 0 36 36">
-            <path
-              d="M18 2.0845 a 15.9155 15.9155 0 0 0 0 31.831 a 15.9155 15.9155 0 0 0 0 -31.831"
-              fill="none"
-              stroke="#444"
-              stroke-width="1"
-            />
-          </svg>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="chart">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path
+                  class="circle-bg"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path
+                  class="circle"
+                  stroke-dasharray="85, 100"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">85%</text>
+              </svg>
+            </div>
+            <div class="chart-description">
+              <p><strong class="text-uppercase">Html5 &amp; Css3</strong></p>
+              <p>Expert, 4 years</p>
+              <p>
+                Donec cursus nibh quis egestas metus id est semper dapibus.
+                Aliquam iaculis semper facilisis eu lobortis enim molestie sit
+                amet tortor.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="chart">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path
+                  class="circle-bg"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path
+                  class="circle"
+                  stroke-dasharray="50, 100"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">50%</text>
+              </svg>
+            </div>
+            <div class="chart-description">
+              <p><strong class="text-uppercase">Javascript</strong></p>
+              <p>Expert, 4 years</p>
+              <p>
+                Donec cursus nibh quis egestas metus id est semper dapibus.
+                Aliquam iaculis semper facilisis eu lobortis enim molestie sit
+                amet tortor.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="chart">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path
+                  class="circle-bg"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path
+                  class="circle"
+                  stroke-dasharray="60, 100"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">60%</text>
+              </svg>
+            </div>
+            <div class="chart-description">
+              <p><strong class="text-uppercase">Backend Development</strong></p>
+              <p>Expert, 4 years</p>
+              <p>
+                Donec cursus nibh quis egestas metus id est semper dapibus.
+                Aliquam iaculis semper facilisis eu lobortis enim molestie sit
+                amet tortor.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="chart">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path
+                  class="circle-bg"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path
+                  class="circle"
+                  stroke-dasharray="75, 100"
+                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">75%</text>
+              </svg>
+            </div>
+            <div class="chart-description">
+              <p><strong class="text-uppercase">Adobe Photoshop</strong></p>
+              <p>Expert, 4 years</p>
+              <p>
+                Donec cursus nibh quis egestas metus id est semper dapibus.
+                Aliquam iaculis semper facilisis eu lobortis enim molestie sit
+                amet tortor.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

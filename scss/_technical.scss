@@ -1,0 +1,40 @@
+#technical_skills {
+  .chart {
+    width: 66%;
+    margin: 0 auto 30px;
+    .circular-chart {
+      display: block;
+      margin: 10px auto;
+      max-width: 80%;
+      max-height: 250px;
+      .circle-bg {
+        fill: none;
+        stroke: $light_grey;
+        stroke-width: 1.5;
+      }
+      .circle{
+        fill: none;
+        stroke-width: 1.5;
+        animation: draw-chart 1s ease-out forwards;
+        stroke: $gold;
+      }
+      .percentage {
+        fill: $text_colour;
+        font-size: 0.33em;
+        text-anchor: middle;
+        font-family: sans-serif;
+      }
+    }
+  }
+  .chart-description {
+    text-align: center;
+    strong {
+        text-transform: uppercase;
+        font-family: 'Oswald', Arial, Helvetica, sans-serif;
+        color: $header_colour;
+    }
+    p:first-of-type {
+        margin-bottom: 0;
+    }
+  }
+}
