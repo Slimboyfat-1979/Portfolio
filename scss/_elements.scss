@@ -5,3 +5,33 @@ a {
         color: $gold;
     }
 }
+
+.dates {
+  border-radius: 0;
+  margin-bottom: 15px;
+  padding: 10px 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $header_colour;
+  cursor: default !important;
+  [itemprop="startDate"] {
+    position: relative;
+    margin-right: 15px;
+    &::after {
+        margin-left: 15px;
+        color: #fff;
+        content: "-"
+    }
+  }
+  &:hover {
+    background: $header_colour;
+  }
+}
+
+// @include media-breakpoint-down(sm) {
+//     .dates {
+//         position: relative;
+//         padding: 5px 15px;
+//     }
+// }
