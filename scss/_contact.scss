@@ -1,0 +1,49 @@
+#contact {
+    margin-top: 45px;
+    padding-bottom: 60px;
+    .col-md-8 {
+        padding-left: 0;
+    }
+    .col-md-4 {
+        padding-right: 0;
+    }
+}
+
+form {
+    width: 100%;
+    p {
+        display: flex;
+    }
+}
+
+textarea, input[type="email"], input[type="text"] {
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid $light_grey;
+    margin-bottom: 0;
+    resize: none;
+    flex-grow: 4;
+    &:focus {
+        outline: none;
+    }
+}
+
+label {
+    flex-grow: 1
+}
+abbr[title] {
+    text-decoration: none;
+}
+input[type="submit"] {
+    border-radius: 0;
+    padding: 10px 45px;
+    margin-top: 30px;
+    
+}
+
+.social-media {
+    i {
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+}
