@@ -1,3 +1,4 @@
+// ...existing code...
 #contact {
     margin-top: 45px;
     padding-bottom: 60px;
@@ -7,10 +8,13 @@
     .col-md-4 {
         padding-right: 0;
     }
+    h2{
+        padding-left: 0;
+    }   
 }
 
 form {
-    width: 100%;
+    width: 90%;
     p {
         display: flex;
     }
@@ -47,3 +51,4 @@ input[type="submit"] {
         padding-bottom: 10px;
     }
 }
+

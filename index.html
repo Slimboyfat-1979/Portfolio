@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Advanced HTML</title>
-    <script defer
+    <script
+      defer
       src="https://kit.fontawesome.com/8dabcbb496.js"
       crossorigin="anonymous"
     ></script>
@@ -259,7 +260,7 @@
                 />
                 <path
                   class="circle"
-                  stroke-dasharray="85, 100"
+                  stroke-dasharray="0, 100"
                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -288,7 +289,7 @@
                 />
                 <path
                   class="circle"
-                  stroke-dasharray="50, 100"
+                  stroke-dasharray="0, 100"
                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -317,7 +318,7 @@
                 />
                 <path
                   class="circle"
-                  stroke-dasharray="60, 100"
+                  stroke-dasharray="0, 100"
                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -346,7 +347,7 @@
                 />
                 <path
                   class="circle"
-                  stroke-dasharray="75, 100"
+                  stroke-dasharray="0, 100"
                   d="M18 2.0845
                                     a 15.9155 15.9155 0 0 1 0 31.831
                                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -557,9 +558,9 @@
           </div>
           <div class="col-12 col-md-4">
             <div class="social-media">
-                <i class="fa-brands fa-github fa-3x"></i>
-                <i class="fa-brands fa-facebook fa-3x"></i>
-                <i class="fa-brands fa-linkedin fa-3x"></i>
+              <i class="fa-brands fa-github fa-3x"></i>
+              <i class="fa-brands fa-facebook fa-3x"></i>
+              <i class="fa-brands fa-linkedin fa-3x"></i>
             </div>
             <address>
               1234 Some Adress, Nashville<br />
@@ -580,5 +581,33 @@
         <div class="row"></div>
       </div>
     </footer>
+    <script>
+      const target = document.getElementById("technical_skills");      
+      if (target) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            console.log(entries);
+            const [entry] = entries;
+            if (entry.isIntersecting) {
+                const circles = document.querySelectorAll('.circle');
+                const percentages = document.querySelectorAll('.percentage');
+                circles.forEach((circle, idx) => {
+                  // Extract numeric value from percentage text (e.g., '85%')
+                  const percentText = percentages[idx]?.textContent || '0%';
+                  const value = parseInt(percentText) || 0;
+                  // Set stroke-dasharray to "value, 100"
+                  circle.setAttribute('stroke-dasharray', `${value}, 100`);
+                  circle.classList.add('run')
+                });
+            }
+          },
+          {
+            threshold: 0.5,
+          },
+        );
+
+        observer.observe(target);
+      }
+    </script>
   </body>
 </html>

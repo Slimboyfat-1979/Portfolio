@@ -12,12 +12,16 @@
         stroke: $light_grey;
         stroke-width: 1.5;
       }
-      .circle{
+      .circle {
         fill: none;
         stroke-width: 1.5;
-        animation: draw-chart 1s ease-out forwards;
         stroke: $gold;
       }
+
+      .circle.run {
+        animation: draw-chart 1s ease-out forwards;
+      }
+
       .percentage {
         fill: $text_colour;
         font-size: 0.33em;
@@ -29,12 +33,12 @@
   .chart-description {
     text-align: center;
     strong {
-        text-transform: uppercase;
-        font-family: 'Oswald', Arial, Helvetica, sans-serif;
-        color: $header_colour;
+      text-transform: uppercase;
+      font-family: "Oswald", Arial, Helvetica, sans-serif;
+      color: $header_colour;
     }
     p:first-of-type {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
