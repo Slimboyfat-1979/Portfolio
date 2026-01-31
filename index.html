@@ -372,148 +372,34 @@
     <!-- Portfolio Section-->
 
     <section id="portfolio">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="img/pic1-lg.jpg" alt="" class="img-fluid img-fixed" />
           </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+          <div class="col-4">
+            <img src="img/portfolio1.jpg" alt="" class="img-fluid img-fixed" />
           </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
-          </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+          <div class="col-4">
+            <img src="img/portfolio2.jpg" alt="" class="img-fluid img-fixed" />
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+         <div class="row g-0">
+          <div class="col-4">
+            <img src="img/pic3.jpg" alt="" class="img-fluid img-fixed" />
           </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+          <div class="col-4">
+            <img src="img/pic4.jpg" alt="" class="img-fluid img-fixed" />
           </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
-          </div>
-          <div class="col">
-            <picture id="portfolio1">
-              <source
-                media="(max-width: 480px)"
-                srcset="img/portfolio1_small.jpg"
-              />
-              <source
-                media="(max-width: 640px)"
-                srcset="img/portfolio1_medium.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="img/portfolio1_large.jpg"
-              />
-              <img src="img/portfolio1.jpg" alt="A website" />
-            </picture>
+          <div class="col-4">
+            <img src="img/pic5.jpg" alt="" class="img-fluid img-fixed" />
           </div>
         </div>
       </div>
+        <style>
+          /* Ensures all portfolio images are the same size and cover their box */
+          
+        </style>
     </section>
 
     <!-- Contact Section -->
@@ -582,23 +468,23 @@
       </div>
     </footer>
     <script>
-      const target = document.getElementById("technical_skills");      
+      const target = document.getElementById("technical_skills");
       if (target) {
         const observer = new IntersectionObserver(
           (entries) => {
             console.log(entries);
             const [entry] = entries;
             if (entry.isIntersecting) {
-                const circles = document.querySelectorAll('.circle');
-                const percentages = document.querySelectorAll('.percentage');
-                circles.forEach((circle, idx) => {
-                  // Extract numeric value from percentage text (e.g., '85%')
-                  const percentText = percentages[idx]?.textContent || '0%';
-                  const value = parseInt(percentText) || 0;
-                  // Set stroke-dasharray to "value, 100"
-                  circle.setAttribute('stroke-dasharray', `${value}, 100`);
-                  circle.classList.add('run')
-                });
+              const circles = document.querySelectorAll(".circle");
+              const percentages = document.querySelectorAll(".percentage");
+              circles.forEach((circle, idx) => {
+                // Extract numeric value from percentage text (e.g., '85%')
+                const percentText = percentages[idx]?.textContent || "0%";
+                const value = parseInt(percentText) || 0;
+                // Set stroke-dasharray to "value, 100"
+                circle.setAttribute("stroke-dasharray", `${value}, 100`);
+                circle.classList.add("run");
+              });
             }
           },
           {
