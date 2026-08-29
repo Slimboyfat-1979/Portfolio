@@ -14,4 +14,13 @@
         border-bottom: none;
         line-height: 25px;
     }
+    p.cv-download {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-top: 10px;
+
+        a {
+            color: #fff;
+        }
+    }
 }

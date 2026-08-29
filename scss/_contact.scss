@@ -52,3 +52,15 @@ input[type="submit"] {
     }
 }
 
+#form-status {
+    margin-top: 15px;
+
+    &.form-ok {
+        color: $gold;
+    }
+
+    &.form-err {
+        color: #b00020;
+    }
+}
+

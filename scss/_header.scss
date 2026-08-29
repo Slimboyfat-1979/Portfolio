@@ -83,9 +83,34 @@
     
     // Hide menu on mobile, show on md and up
     @media (max-width: 767.98px) {
+        background-color: $light_grey;
+        padding: 0;
+
+        .container-fluid {
+            padding: 0;
+        }
+
         .navbar-collapse {
             &:not(.show) {
                 display: none !important;
+            }
+        }
+
+        .navbar-toggler {
+            background-color: $light_grey;
+            width: auto;
+            border: none;
+            border-radius: 0;
+            padding: 1rem;
+            margin-right: auto;
+        }
+
+        #navbarNav {
+            background-color: $light_grey;
+            padding: 0 1rem 1rem 1rem;
+
+            .nav-link {
+                color: #333;
             }
         }
     }
