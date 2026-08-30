@@ -1,0 +1,60 @@
+// Mobile / small-screen refinements
+// (desktop rules stay as-is above; these only narrow things down)
+
+@media (max-width: 767.98px) {
+    section {
+        padding: 48px 0;
+    }
+
+    // Hero: the desktop 72px headline overflows small screens
+    #hero .container {
+        padding-top: 22vh;
+    }
+    #hero .container h1 {
+        font-size: 2.25rem;
+        line-height: 1.15;
+        word-break: break-word;
+    }
+    #hero .container p {
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        line-height: 1.4;
+    }
+
+    #personal_info h2 {
+        font-size: 2rem;
+    }
+
+    // Date pills: drop them out of the top-right corner so they stop
+    // overlapping the job / qualification titles on narrow screens
+    .experience .dates,
+    #education .education .dates {
+        position: static;
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 6px 18px;
+    }
+
+    // Digital-art grid: shorter tiles when stacked two-up
+    #portfolio .img-fixed {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #hero .container h1 {
+        font-size: 1.9rem;
+    }
+
+    // Contact form: stack each label above its field
+    form {
+        width: 100%;
+    }
+    form p {
+        flex-wrap: wrap;
+    }
+    form label {
+        flex-basis: 100%;
+        margin-bottom: 4px;
+    }
+}

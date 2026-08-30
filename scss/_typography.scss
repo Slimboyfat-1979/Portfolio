@@ -2,6 +2,12 @@ body {
     font-family: 'PT Sans Narrow';
     color: $text_colour;
     font-weight: 400;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
