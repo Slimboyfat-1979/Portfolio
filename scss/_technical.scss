@@ -41,4 +41,16 @@
       margin-bottom: 0;
     }
   }
+  .skills-download {
+    margin-top: 20px;
+    text-align: center;
+    p {
+      max-width: 640px;
+      margin: 0 auto 15px;
+    }
+    .btn-dark {
+      border-radius: 0;
+      padding: 10px 45px;
+    }
+  }
 }
