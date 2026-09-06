@@ -8,6 +8,20 @@
     margin-top: 60px;
   }
 
+  .portfolio-video {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto 0;
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      background: $header_colour;
+    }
+  }
+
   .img-fixed {
     width: 100%;
     height: 400px;
